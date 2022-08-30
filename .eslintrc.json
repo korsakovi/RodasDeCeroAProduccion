@@ -1,12 +1,13 @@
 {
     "env": {
         "browser": true,
+        "commonjs": true,
         "es2021": true
     },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "prettier"
+        "plugin:prettier/recommended"
     ],
     "overrides": [
     ],
@@ -18,8 +19,16 @@
         "react"
     ],
     "rules": {
-      "indent": ["warn", "tab"],
-       "quotes": ["error", "single"],
-       "semi": ["error", "always"]
+       "react/jsx-uses-react": "off",
+       "react/react-in-jsx-scope": "off",
+       "no-unused-vars": ["error", { "vars": "all"}],
+       "prettier/prettier": ["error",{
+      "endOfLine": "auto"}
+    ]
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
     }
 }

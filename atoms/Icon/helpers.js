@@ -1,10 +1,10 @@
-const ICONS_ASSETS_PATH = "/icons/";
+const ICONS_ASSETS_PATH = '/icons/';
 
 const iconMap = {
- rightArrow: "right-arrow",
- home: "home-outline", //FIXME Add
+	rightArrow: 'right-arrow',
+	home: 'home-outline', //FIXME Add
 };
 
 export const mapType = (type) => `${ICONS_ASSETS_PATH}/${iconMap[type]}.svg`;
 
-export const mapSize = (size) => null; //TODO
+export const mapSize = () => null; //TODO

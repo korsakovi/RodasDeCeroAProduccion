@@ -6,6 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint .",
+		"lint-fix": "eslint --fix --ext .js,.jsx .",
 		"storybook": "start-storybook -p 6006 -s ./assets",
 		"build-storybook": "build-storybook",
 		"build-tokens": "node ./scripts/build-tokens",
