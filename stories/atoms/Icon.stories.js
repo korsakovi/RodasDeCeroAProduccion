@@ -5,4 +5,6 @@ export default {
 	component: Icon,
 };
 
-export const Default = () => <Icon type='rightArrow' />;
+export const ArrowRight = () => <Icon type='arrowRight' />;
+export const AngleDown = () => <Icon type='angleDown' />;
+export const HasBackground = () => <Icon type='angleDown' hasBackground />;
