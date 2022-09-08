@@ -1,7 +1,7 @@
 {
-	"name": "cero-a-produccion",
-	"version": "1.0.0",
-	"description": "",
+	"name": "@korsa/components",
+	"version": "0.1.2",
+	"description": "Libreria para crear apps de cero a produccion",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
