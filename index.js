@@ -1,12 +1,13 @@
-import Button from './atoms/Button';
-import Heading from './atoms/Heading';
-import Icon from './atoms/Icon';
-import Input from './atoms/Input';
-import Picture from './atoms/Picture';
+// Layout
+export { default as Spacer } from './layout/Spacer';
 
-import Spacer from './layout/Spacer';
+//Atoms
+export { default as Button } from './atoms/Button';
+export { default as Heading } from './atoms/Heading';
+export { default as Icon } from './atoms/Icon';
+export { default as Input } from './atoms/Input';
+export { default as Picture } from './atoms/Picture';
 
-import ButtonIcon from './molecules/ButtonIcon';
-import DropDown from './molecules/Dropdown';
-
-export { Button, Heading, Icon, Input, Picture, Spacer, ButtonIcon, DropDown };
+// Molecules
+export { default as ButtonIcon } from './molecules/ButtonIcon';
+export { default as DropDown } from './molecules/Dropdown';

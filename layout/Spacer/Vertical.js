@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import './Spacer.css';
+import styles from './Spacer.module.css';
 
-import { choices } from '../../tokens';
-
-const getSize = (size) => choices.spacing[size];
+import { getSize } from './helpers';
 
 const Vertical = ({ size, maxHeight, isVisible }) => (
 	<div
-		className={classNames('spacer', {
-			'is-visible': isVisible,
+		className={classNames(styles.spacer, {
+			[styles['is-visible']]: isVisible,
 		})}
 		style={{
 			display: 'block',
