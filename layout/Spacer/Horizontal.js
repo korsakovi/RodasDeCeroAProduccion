@@ -18,7 +18,7 @@ const Horizontal = ({ size, isVisible }) => (
 );
 
 Horizontal.propTypes = {
-	size: PropTypes.number.isRequired,
+	size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	isVisible: PropTypes.bool,
 };
 

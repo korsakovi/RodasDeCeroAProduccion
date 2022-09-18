@@ -14,10 +14,15 @@ const Heading = ({ children, color, size }) => (
 	</header>
 );
 
+const options = {
+	colors: ['default', 'primary'],
+	sizes: ['xs', 'sm', 'md', 'lg', 'xl', '2xl'],
+};
+
 Heading.propTypes = {
 	children: PropTypes.node.isRequired,
-	color: PropTypes.oneOf[('primary', 'default')],
-	size: PropTypes.oneOf[('xs', 'sm', 'md', 'lg', 'xl', '2xl')],
+	color: PropTypes.oneOf(options.colors),
+	size: PropTypes.oneOf(options.sizes),
 };
 
 Heading.defaultProps = {

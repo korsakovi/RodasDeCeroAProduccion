@@ -15,9 +15,13 @@ const Button = ({ type, children, isBlock, onClick }) => (
 	</button>
 );
 
+const options = {
+	types: ['primary', 'secondary', 'tertiary'],
+};
+
 Button.propTypes = {
 	children: PropTypes.node.isRequired,
-	type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+	type: PropTypes.oneOf(options.types),
 	onClick: PropTypes.func,
 	isBlock: PropTypes.bool,
 };
