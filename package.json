@@ -1,6 +1,6 @@
 {
 	"name": "@korsa/components",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"description": "Libreria para crear apps de cero a produccion",
 	"main": "index.js",
 	"scripts": {
@@ -40,6 +40,7 @@
 	"dependencies": {
 		"@korsa/components": "^0.1.2",
 		"classnames": "^2.3.1",
+		"prop-types": "^15.8.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"storybook": "^1.0.0",
