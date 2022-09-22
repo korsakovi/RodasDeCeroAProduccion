@@ -1,4 +1,4 @@
-async function supportCssModules(config) {
+const cssModules = () => async (config) => {
 	config.module.rules.find(
 		(rule) => rule.test.toString() === '/\\.css$/'
 	).exclude = /\.module\.css$/;
@@ -17,13 +17,20 @@ async function supportCssModules(config) {
 	});
 
 	return config;
-}
+};
 
 module.exports = {
 	stories: [
 		'../stories/**/*.stories.mdx',
 		'../stories/**/*.stories.@(js|jsx|ts|tsx)',
 	],
-	addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
-	webpackFinal: supportCssModules,
+	addons: [
+		'@storybook/addon-links',
+		'@storybook/addon-essentials',
+		'@storybook/addon-jest',
+	],
+	webpackFinal: cssModules,
+	features: {
+		babelModeV7: true,
+	},
 };

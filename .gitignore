@@ -357,3 +357,4 @@ $RECYCLE.BIN/
 
 package-lock.json
 !atoms/Icon
+.jest-test-results.json
