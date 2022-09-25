@@ -39,7 +39,7 @@ exports[`Storyshots Atoms/Button Tertiary 1`] = `
 exports[`Storyshots Atoms/Heading Colors 1`] = `
 <div
   style={
-    {
+    Object {
       "display": "flex",
       "flexDirection": "column",
     }
@@ -61,7 +61,7 @@ exports[`Storyshots Atoms/Heading Colors 1`] = `
 exports[`Storyshots Atoms/Heading Default 1`] = `
 <div
   style={
-    {
+    Object {
       "display": "flex",
       "flexDirection": "column",
     }
@@ -78,7 +78,7 @@ exports[`Storyshots Atoms/Heading Default 1`] = `
 exports[`Storyshots Atoms/Heading Sizes 1`] = `
 <div
   style={
-    {
+    Object {
       "display": "flex",
       "flexDirection": "column",
     }
@@ -116,7 +116,7 @@ exports[`Storyshots Atoms/Icon Angle Down 1`] = `
 <div
   className="icon"
   style={
-    {
+    Object {
       "height": 26,
       "width": 26,
     }
@@ -128,7 +128,7 @@ exports[`Storyshots Atoms/Icon Angle Down 1`] = `
     <img
       src="/icons//angle-down.svg"
       style={
-        {
+        Object {
           "maxWidth": "26px",
         }
       }
@@ -141,7 +141,7 @@ exports[`Storyshots Atoms/Icon Arrow Right 1`] = `
 <div
   className="icon"
   style={
-    {
+    Object {
       "height": 26,
       "width": 26,
     }
@@ -153,7 +153,7 @@ exports[`Storyshots Atoms/Icon Arrow Right 1`] = `
     <img
       src="/icons//arrow-right.svg"
       style={
-        {
+        Object {
           "maxWidth": "26px",
         }
       }
@@ -166,7 +166,7 @@ exports[`Storyshots Atoms/Icon Has Background 1`] = `
 <div
   className="icon has-background"
   style={
-    {
+    Object {
       "height": 26,
       "width": 26,
     }
@@ -178,7 +178,7 @@ exports[`Storyshots Atoms/Icon Has Background 1`] = `
     <img
       src="/icons//angle-down.svg"
       style={
-        {
+        Object {
           "maxWidth": "26px",
         }
       }
@@ -204,7 +204,7 @@ exports[`Storyshots Atoms/Picture Default 1`] = `
   <img
     src="https://placeimg.com/400/400/any"
     style={
-      {
+      Object {
         "maxWidth": "200px",
       }
     }
@@ -216,10 +216,10 @@ exports[`Storyshots Layout/Spacer/Default Default 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "inline-block",
-      "height": undefined,
-      "width": undefined,
+      "height": 0,
+      "width": 0,
     }
   }
 />
@@ -229,7 +229,7 @@ exports[`Storyshots Layout/Spacer/Default Extra Small 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "inline-block",
       "height": 5,
       "width": 5,
@@ -242,7 +242,7 @@ exports[`Storyshots Layout/Spacer/Default Large 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "inline-block",
       "height": 40,
       "width": 40,
@@ -255,7 +255,7 @@ exports[`Storyshots Layout/Spacer/Default Medium 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "inline-block",
       "height": 20,
       "width": 20,
@@ -268,7 +268,7 @@ exports[`Storyshots Layout/Spacer/Default Small 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "inline-block",
       "height": 15,
       "width": 15,
@@ -281,7 +281,7 @@ exports[`Storyshots Layout/Spacer/Horizontal Default 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": undefined,
       "width": "100%",
@@ -294,7 +294,7 @@ exports[`Storyshots Layout/Spacer/Horizontal Extra Small 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": 5,
       "width": "100%",
@@ -307,7 +307,7 @@ exports[`Storyshots Layout/Spacer/Horizontal Large 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": 40,
       "width": "100%",
@@ -320,7 +320,7 @@ exports[`Storyshots Layout/Spacer/Horizontal Medium 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": 20,
       "width": "100%",
@@ -333,7 +333,7 @@ exports[`Storyshots Layout/Spacer/Horizontal Small 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": 15,
       "width": "100%",
@@ -346,11 +346,11 @@ exports[`Storyshots Layout/Spacer/Vertical Default 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": "100vh",
       "maxHeight": 200,
-      "width": undefined,
+      "width": 0,
     }
   }
 />
@@ -360,7 +360,7 @@ exports[`Storyshots Layout/Spacer/Vertical Extra Small 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": "100vh",
       "maxHeight": 200,
@@ -374,7 +374,7 @@ exports[`Storyshots Layout/Spacer/Vertical Large 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": "100vh",
       "maxHeight": 200,
@@ -388,7 +388,7 @@ exports[`Storyshots Layout/Spacer/Vertical Medium 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": "100vh",
       "maxHeight": 200,
@@ -402,7 +402,7 @@ exports[`Storyshots Layout/Spacer/Vertical Small 1`] = `
 <div
   className="spacer is-visible"
   style={
-    {
+    Object {
       "display": "block",
       "height": "100vh",
       "maxHeight": 200,
@@ -417,19 +417,22 @@ exports[`Storyshots Molecules/ButtonIcon Default 1`] = `
   className="button type-secondary"
   onClick={[Function]}
 >
-  <span
+  Button icon
+  <div
+    className="spacer"
     style={
-      {
-        "marginRight": 10,
+      Object {
+        "display": "block",
+        "height": "100vh",
+        "maxHeight": "100%",
+        "width": 5,
       }
     }
-  >
-    Button icon
-  </span>
+  />
   <div
     className="icon"
     style={
-      {
+      Object {
         "height": 26,
         "width": 26,
       }
@@ -439,9 +442,9 @@ exports[`Storyshots Molecules/ButtonIcon Default 1`] = `
       className="picture"
     >
       <img
-        src="/icons//undefined.svg"
+        src="/icons//arrow-right.svg"
         style={
-          {
+          Object {
             "maxWidth": "26px",
           }
         }
@@ -458,7 +461,7 @@ exports[`Storyshots Molecules/Dropdown Default 1`] = `
   <div
     className="icon has-background"
     style={
-      {
+      Object {
         "height": 26,
         "width": 26,
       }
@@ -470,7 +473,7 @@ exports[`Storyshots Molecules/Dropdown Default 1`] = `
       <img
         src="/icons//angle-down.svg"
         style={
-          {
+          Object {
             "maxWidth": "26px",
           }
         }

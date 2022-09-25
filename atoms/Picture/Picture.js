@@ -1,3 +1,4 @@
+import React from 'react';
 import { getWidth } from './helpers';
 import PropTypes from 'prop-types';
 import styles from './Picture.module.css';

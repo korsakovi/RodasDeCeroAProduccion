@@ -1,3 +1,4 @@
+import React from 'react';
 import { mapType, mapSize } from './helpers';
 import PropTypes from 'prop-types';
 import Picture from '../Picture';

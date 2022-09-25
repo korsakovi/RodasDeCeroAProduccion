@@ -1,3 +1,4 @@
+import React from 'react';
 import Picture from '../../atoms/Picture';
 
 export default {

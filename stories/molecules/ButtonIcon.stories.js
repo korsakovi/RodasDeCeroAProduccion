@@ -1,4 +1,4 @@
-//import React from "react";
+import React from 'react';
 import ButtonIcon from '../../molecules/ButtonIcon';
 
 export default {
@@ -7,5 +7,5 @@ export default {
 };
 
 export const Default = () => (
-	<ButtonIcon icon='rightArrow'>Button icon</ButtonIcon>
+	<ButtonIcon icon='arrowRight'>Button icon</ButtonIcon>
 );

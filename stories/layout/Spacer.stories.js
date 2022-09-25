@@ -1,3 +1,4 @@
+import React from 'react';
 import Spacer from '../../layout/Spacer';
 
 export default {
@@ -8,26 +9,26 @@ export default {
 	},
 };
 
-const Template = (props) => <Spacer {...props} />;
+const Story = (props) => <Spacer {...props} />;
 
-export const Default = Template.bind({});
+export const Default = Story.bind({});
 
-export const ExtraSmall = Template.bind({});
+export const ExtraSmall = Story.bind({});
 ExtraSmall.args = {
 	size: 'xs',
 };
 
-export const Small = Template.bind({});
+export const Small = Story.bind({});
 Small.args = {
 	size: 'sm',
 };
 
-export const Medium = Template.bind({});
+export const Medium = Story.bind({});
 Medium.args = {
 	size: 'md',
 };
 
-export const Large = Template.bind({});
+export const Large = Story.bind({});
 Large.args = {
 	size: 'lg',
 };

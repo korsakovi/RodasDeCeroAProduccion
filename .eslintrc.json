@@ -2,7 +2,7 @@
     "env": {
         "browser": true,
         "commonjs": true,
-        "es2021": true,
+        "es6": true,
         "jest": true
     },
     "extends": [
@@ -10,26 +10,26 @@
         "plugin:react/recommended",
         "plugin:prettier/recommended"
     ],
-    "overrides": [
-    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
     "parserOptions": {
-        "ecmaVersion": "latest",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
         "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
     "rules": {
-       "react/jsx-uses-react": "off",
-       "react/react-in-jsx-scope": "off",
-       "no-unused-vars": ["error", { "vars": "all"}],
-       "prettier/prettier": ["error",{
-      "endOfLine": "auto"}
-    ]
     },
     "settings": {
       "react": {
         "version": "detect"
       }
     }
+
 }

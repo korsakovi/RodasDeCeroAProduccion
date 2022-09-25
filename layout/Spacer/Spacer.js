@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Horizontal from './Horizontal';
@@ -20,11 +21,11 @@ const Spacer = ({ size, isVisible }) => (
 );
 
 Spacer.defaultProps = {
-	isVisible: true,
+	size: 'none',
 };
 
 Spacer.propTypes = {
-	size: PropTypes.number.isRequired,
+	size: PropTypes.string,
 	isVisible: PropTypes.bool,
 };
 

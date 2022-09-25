@@ -1,82 +1,66 @@
 {
 	"name": "@korsa/components",
 	"version": "0.0.0-development",
-	"description": "Libreria para crear apps de cero a produccion",
+	"private": false,
+	"description": "A components library to create apps from zero to production",
 	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/korsakovi/RodasDeCeroAProduccion.git"
+	},
 	"scripts": {
+		"dev": "yarn storybook",
 		"test": "jest",
-		"test:generate-output": "jest --json --outputFile=.jest-test-results.json",
 		"lint": "eslint .",
-		"lint-fix": "eslint --fix --ext .js,.jsx .",
 		"storybook": "start-storybook -p 6006 -s ./assets",
-		"build-storybook": "build-storybook",
 		"build-tokens": "node ./scripts/build-tokens",
-		"prepare": "husky install",
-		"pre-commit": "lint-staged",
+		"build-storybook": "build-storybook",
 		"semantic-release": "semantic-release"
 	},
 	"keywords": [
-		"next",
-		"storybook"
+		"react",
+		"components"
 	],
 	"author": "Jacobo Garcia",
 	"license": "MIT",
 	"devDependencies": {
-		"@babel/core": "^7.19.1",
-		"@babel/preset-env": "^7.19.1",
-		"@babel/preset-react": "^7.18.6",
-		"@storybook/addon-actions": "^6.5.10",
-		"@storybook/addon-essentials": "^6.4.22",
-		"@storybook/addon-interactions": "^6.5.10",
-		"@storybook/addon-jest": "^6.5.12",
-		"@storybook/addon-links": "^6.5.10",
-		"@storybook/addon-storyshots": "^6.5.12",
-		"@storybook/builder-webpack4": "^6.5.10",
-		"@storybook/manager-webpack4": "^6.5.10",
-		"@storybook/mdx2-csf": "^0.0.3",
-		"@storybook/react": "^6.5.12",
-		"@storybook/testing-library": "^0.0.13",
-		"babel-core": "^7.0.0-bridge.0",
-		"babel-jest": "^29.0.3",
-		"babel-loader": "^8.2.5",
-		"eslint": "^8.23.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"eslint-plugin-react": "^7.31.1",
-		"husky": "^8.0.1",
-		"identity-obj-proxy": "^3.0.0",
-		"jest": "^29.0.3",
-		"jest-environment-jsdom": "^29.0.3",
-		"lint-staged": "^13.0.3",
-		"minireset.css": "^0.0.7",
-		"prettier": "2.7.1",
-		"react-test-renderer": "^18.0.0",
-		"regenerator-runtime": "^0.13.9",
-		"semantic-release": "^19.0.5"
+		"@babel/core": "7.11.6",
+		"@babel/preset-env": "7.11.5",
+		"@babel/preset-react": "7.10.4",
+		"@storybook/addon-actions": "6.0.21",
+		"@storybook/addon-essentials": "6.0.21",
+		"@storybook/addon-links": "6.0.21",
+		"@storybook/addon-storyshots": "6.0.21",
+		"@storybook/react": "6.0.21",
+		"babel-jest": "26.3.0",
+		"babel-loader": "8.1.0",
+		"eslint": "7.8.1",
+		"eslint-config-prettier": "6.11.0",
+		"eslint-plugin-prettier": "3.1.4",
+		"eslint-plugin-react": "7.20.6",
+		"husky": "4.2.5",
+		"identity-obj-proxy": "3.0.0",
+		"jest": "26.4.2",
+		"lint-staged": "10.3.0",
+		"minireset.css": "0.0.6",
+		"prettier": "2.1.1",
+		"react-is": "16.13.1",
+		"react-test-renderer": "16.13.1",
+		"semantic-release": "17.1.2"
 	},
-	"dependencies": {
-		"@korsa/components": "^0.1.2",
-		"@storybook/addon-storyshots-puppeteer": "^6.5.12",
-		"classnames": "^2.3.1",
-		"global": "^4.4.0",
-		"npm-check": "^6.0.1",
-		"prop-types": "^15.8.1",
-		"puppeteer": "^18.0.4",
-		"react": "^17.0.2",
-		"react-dom": "^18.0.0",
-		"storybook": "^6.5.12"
+	"peerDependencies": {
+		"minireset.css": "^0.0.6",
+		"react": "^16.13.1"
 	},
-	"resolutions": {
-		"@storybook/react": "^6.5.12"
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
 	},
 	"lint-staged": {
-		"*.{css,less,scss,html,json,jsx,js}": [
-			"prettier --write ."
-		],
-		"*.js": "eslint --fix"
+		"*.js": "eslint --cache --fix"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/korsakovi/RodasDeCeroAPropuccion.git"
+	"dependencies": {
+		"classnames": "^2.3.2"
 	}
 }
