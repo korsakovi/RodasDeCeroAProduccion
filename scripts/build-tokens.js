@@ -9,26 +9,20 @@ function transformTokens(parentKey, object) {
 
 	return objectKeys.reduce((tokensTransformed, objectKey) => {
 		const value = object[objectKey];
+		const customProperty = parentKey
+			? `${parentKey}-${objectKey}`
+			: `${objectKey}`;
 
 		if (Array.isArray(value)) {
-			const customProperty = parentKey
-				? `${parentKey}-${objectKey}`
-				: `${objectKey}`;
-
 			return `${tokensTransformed}\n\t--${toKebabCase(
 				customProperty
 			)}: ${value.join(', ')};`;
 		} else if (typeof value === 'object') {
-			const customProperty = parentKey
-				? `${parentKey}-${objectKey}`
-				: `${objectKey}`;
-
 			return `${tokensTransformed}\n\t${transformTokens(
 				`${toKebabCase(customProperty)}`,
 				value
 			)}`;
 		}
-
 		return `${tokensTransformed}\n\t--${parentKey}-${toKebabCase(
 			objectKey
 		)}: ${value};`;
@@ -36,18 +30,18 @@ function transformTokens(parentKey, object) {
 }
 
 function buildTokens() {
-	const customProperties = `
-  ${transformTokens(null, choices)}
-  ${transformTokens(null, decisions)}`;
+	const customProperties = `${transformTokens(null, choices)}${transformTokens(
+		null,
+		decisions
+	)}`;
 
-	const data = [':root {', customProperties.trim(), '}']
-		.join('\n\t')
-		.concat('\n');
+	const data = [':root {', customProperties.trim()].join('\n\t').concat('\n}');
 
 	fs.writeFile('./styles/tokens.css', data, 'utf8', function (error) {
 		if (error) {
 			return console.error(error);
 		}
+		console.log('🎨 Custom properties created!');
 	});
 }
 
