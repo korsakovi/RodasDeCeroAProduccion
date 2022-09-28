@@ -1,8 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import styles from './Dropdown.module.css';
 import Icon from '../../atoms/Icon';
+
+import styles from './Dropdown.module.css';
 
 const Dropdown = ({ id, className, options, value, onChange }) => (
 	<div id={id} className={classNames(className, styles.dropdown)}>

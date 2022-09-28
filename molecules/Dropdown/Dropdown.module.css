@@ -1,11 +1,9 @@
 .dropdown {
   display: inline-block;
   position: relative;
-  height: var(--input-height);
 }
 
-
-.dropdown .icon {
+.dropdown-icon {
   position: absolute;
   right: 1px;
   pointer-events: none;
@@ -14,8 +12,9 @@
 }
 
 .dropdown-select {
-  border:var(--border-width-default) solid var(--colors-primary);
+  border: var(--border-width-default) solid var(--color-primary);
   border-radius: var(--border-radius-lg);
   padding: 10px 30px 10px 20px;
-  color: var(--color-font-base)
+  color: var(--color-font-base);
+  height: var(--input-height);
 }

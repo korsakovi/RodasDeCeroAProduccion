@@ -4,11 +4,11 @@ import classNames from 'classnames';
 
 import styles from './Button.module.css';
 
-const Button = ({ type, children, isBlock, onClick }) => (
+const Button = ({ type, children, isInline, onClick }) => (
 	<button
 		className={classNames(styles.button, {
 			[styles[`type-${type}`]]: type,
-			[styles['is-block']]: isBlock && type !== 'tertiary',
+			[styles['is-inline']]: isInline || type === 'tertiary',
 		})}
 		onClick={onClick}
 	>
@@ -16,20 +16,16 @@ const Button = ({ type, children, isBlock, onClick }) => (
 	</button>
 );
 
-const options = {
-	types: ['primary', 'secondary', 'tertiary'],
-};
-
 Button.propTypes = {
 	children: PropTypes.node.isRequired,
-	type: PropTypes.oneOf(options.types),
+	type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
 	onClick: PropTypes.func,
-	isBlock: PropTypes.bool,
+	isInline: PropTypes.bool,
 };
 
 Button.defaultProps = {
-	isBlock: true,
 	onClick: () => {},
+	isInline: false,
 };
 
 export default Button;
