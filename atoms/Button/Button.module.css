@@ -9,7 +9,7 @@
   cursor: pointer;
   transition: all 0.5s ease;
   font-size: var(--font-size-md);
-  width: 100%;
+  /* width: 100%; */
   min-width: max-content;
   font-family: var(--font-family-sans);
   font-weight: var(--font-weight-bold);

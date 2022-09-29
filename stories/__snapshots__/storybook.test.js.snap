@@ -2,7 +2,7 @@
 
 exports[`Storyshots Atoms/Button Default 1`] = `
 <button
-  className="button is-block"
+  className="button"
   onClick={[Function]}
 >
   Default Button
@@ -11,7 +11,7 @@ exports[`Storyshots Atoms/Button Default 1`] = `
 
 exports[`Storyshots Atoms/Button Primary 1`] = `
 <button
-  className="button type-primary is-block"
+  className="button type-primary"
   onClick={[Function]}
 >
   Primary Button
@@ -20,7 +20,7 @@ exports[`Storyshots Atoms/Button Primary 1`] = `
 
 exports[`Storyshots Atoms/Button Secondary 1`] = `
 <button
-  className="button type-secondary is-block"
+  className="button type-secondary"
   onClick={[Function]}
 >
   Secondary Button
@@ -29,7 +29,7 @@ exports[`Storyshots Atoms/Button Secondary 1`] = `
 
 exports[`Storyshots Atoms/Button Tertiary 1`] = `
 <button
-  className="button type-tertiary"
+  className="button type-tertiary is-inline"
   onClick={[Function]}
 >
   Tertiary Button
@@ -459,7 +459,7 @@ exports[`Storyshots Molecules/Dropdown Default 1`] = `
   className="dropdown"
 >
   <div
-    className="icon has-background"
+    className="dropdown-icon icon has-background"
     style={
       Object {
         "height": 26,
