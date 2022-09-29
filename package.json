@@ -1,6 +1,6 @@
 {
 	"name": "@korsa/components",
-	"version": "0.0.1-development",
+	"version": "0.0.2-development",
 	"private": false,
 	"description": "A components library to create apps from zero to production",
 	"main": "index.js",
