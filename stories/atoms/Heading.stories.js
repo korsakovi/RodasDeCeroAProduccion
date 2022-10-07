@@ -27,6 +27,9 @@ export const Sizes = () => (
 		<Heading size='xs'>
 			El veloz murciélago hindú comía feliz cardillo y kiwi.
 		</Heading>
+		<Heading size='sm'>
+			El veloz murciélago hindú comía feliz cardillo y kiwi.
+		</Heading>
 		<Heading size='md'>
 			El veloz murciélago hindú comía feliz cardillo y kiwi.
 		</Heading>

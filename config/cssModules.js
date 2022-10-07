@@ -13,6 +13,7 @@ const cssModules = () => async (config) => {
 				loader: 'css-loader',
 				options: {
 					modules: true,
+					camelCase: true,
 				},
 			},
 		],
