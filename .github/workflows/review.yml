@@ -20,7 +20,7 @@ jobs:
         run: yarn lint
       - name: Run Tests
         run: yarn test
-      - name: Run Chromatic
+      - name: Run Chromatics
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

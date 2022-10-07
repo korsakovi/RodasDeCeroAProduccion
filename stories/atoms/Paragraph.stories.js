@@ -6,4 +6,6 @@ export default {
 	component: Paragraph,
 };
 
+console.log(document);
+
 export const Default = () => <Paragraph>Hello Paragraph</Paragraph>;
